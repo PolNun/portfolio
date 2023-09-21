@@ -19,13 +19,21 @@ html {
 }
 
 body {
-  margin: 0 150px;
   font-family: Raleway, sans-serif;
   --textcolor-primary: #222;
   --accentcolor-primary: #4652dc;
   --mastodon-button: #282C37;
 }
 
+header,
+main > article:first-child,
+.projects-header,
+.project-title,
+.project-description,
+.skills-header,
+.skills-container {
+  margin: 0 150px;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
