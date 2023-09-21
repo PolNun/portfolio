@@ -10,9 +10,17 @@
   align-items: end;
 }
 
-.header-left > h1 {
+h1 {
   font-size: 3.5em;
   margin: 0;
+}
+
+h2, h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0.5em 0 0 0;
 }
 
 .header-right {
@@ -49,12 +57,31 @@
   background-color: var(--accentcolor-primary);
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 0.5rem 1rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1.5em;
-  margin: 4px 2px;
   cursor: pointer;
   border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.presentation-buttons-container button:first-child {
+  background-color: var(--accentcolor-primary);
+}
+
+.presentation-buttons-container button:last-child {
+  background-color: var(--mastodon-button);
+}
+
+.presentation-buttons-container a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+.project {
+  background-color: red;
+  padding: 0.5rem 0;
+  width: 100%;
 }
