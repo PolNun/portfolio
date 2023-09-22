@@ -192,23 +192,29 @@ h2, h3, p {
   grid-area: 2 / 6 / 3 / 7;
 }
 
+.about-container {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
 .contact-container {
-  margin: 2rem 0 3rem 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  padding: 1rem;
+}
+
+.contact-container > h1 {
+  text-align: center;
 }
 
 form {
   margin-top: 1rem;
   display: inline-block;
-  width: fit-content;
+  width: 400px;
 }
 
 .row {
   padding: 0 0 20px 0;
-  width: 400px;
+  display: flex;
+  flex-direction: column;
 }
 
 label {
@@ -226,7 +232,11 @@ textarea {
   outline: none;
   padding: 10px;
   border-radius: 5px;
-  width: 100%;
+}
+
+textarea {
+  min-height: 1ch;
+  max-height: 30ch;
 }
 
 .submit-button {
@@ -245,10 +255,101 @@ textarea {
 .submit-button:hover {
   background-color: var(--accentcolor-primary);
   color: white;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.1s ease;
 }
 
 .submit-button-container {
   display: flex;
   justify-content: center;
+}
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: var(--accentcolor-primary);
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.my-float {
+  margin-top: 22px;
+}
+
+.modal-window {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.25);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.1s;
+}
+
+.modal-window:target {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-window > div {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2em;
+  background: white;
+}
+
+.modal-window header {
+  font-weight: bold;
+}
+
+.modal-window h1 {
+  font-size: 150%;
+  margin: 0 0 15px;
+}
+
+.modal-close {
+  color: #444;
+  line-height: 50px;
+  font-size: 80%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+}
+
+.modal-close:hover {
+  color: black;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.modal-window > div {
+  border-radius: 1rem;
+}
+
+.modal-window div:not(:last-of-type) {
+  margin-bottom: 15px;
 }

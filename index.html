@@ -149,7 +149,7 @@
   </article>
 
   <article>
-    <div class="skills-header">
+    <div class="about-container">
       <h1>About Pablo</h1>
       <p>I'm a software developer from Cordoba, Argentina. I'm currently working as
         a freelance Software Developer. My main focus is on the backend, but I also have experience with frontend
@@ -162,10 +162,11 @@
     </div>
   </article>
 
-  <article>
+  <div id="open-modal" class="modal-window">
     <div class="contact-container">
+      <a href="#" title="Close" class="modal-close">X</a>
       <h1>Contact me</h1>
-      <form id="contact_form">
+      <form>
         <div class="row">
           <label for="name">Email</label>
           <input id="name" class="input" name="name" type="text" size="30"/>
@@ -185,7 +186,12 @@
         </div>
       </form>
     </div>
-  </article>
+  </div>
+  </div>
+
+  <a href="#open-modal" class="float">
+    <i class="fa-solid fa-envelope my-float"></i>
+  </a>
 </main>
 
 <script src="https://kit.fontawesome.com/48e10fc4fc.js" crossorigin="anonymous"></script>

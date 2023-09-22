@@ -31,7 +31,8 @@ main > article:first-child,
 .project-title,
 .project-description,
 .skills-header,
-.skills-container {
+.skills-container,
+.about-container {
   margin: 0 150px;
 }
 /*
