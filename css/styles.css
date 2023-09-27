@@ -128,7 +128,7 @@ p {
 }
 
 .skill {
-  margin: 0.5rem;
+  margin: 0.3rem;
 }
 
 .skill-title {
@@ -138,7 +138,7 @@ p {
 }
 
 .skills-container>div>img {
-  width: 80px;
+  width: 50px;
 }
 
 .skills-container {
