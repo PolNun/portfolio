@@ -353,3 +353,18 @@ a {
 .modal-window div:not(:last-of-type) {
   margin-bottom: 15px;
 }
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 3em;
+  color: white;
+  background-color: #222;
+}
+
+.footer-right {
+  display: flex;
+  gap: 20px;
+}
