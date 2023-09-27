@@ -14,7 +14,7 @@ body {
 }
 
 header,
-main > article:first-child,
+main>article:first-child,
 .projects-header,
 .project-title,
 .project-description,
@@ -107,10 +107,10 @@ textarea {
 @media print,
 (-webkit-min-device-pixel-ratio: 1.25),
 (min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
-}
+(min-resolution: 120dpi) {}
 
 @media print {
+
   *,
   *::before,
   *::after {

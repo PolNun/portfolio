@@ -10,7 +10,13 @@ h1 {
   margin: 0;
 }
 
-h2, h3, p {
+h2 {
+  font-size: 2em;
+}
+
+h2,
+h3,
+p {
   margin: 0;
 }
 
@@ -44,8 +50,7 @@ h2, h3, p {
   width: 75%;
 }
 
-.presentation-buttons-container button {
-  background-color: var(--accentcolor-primary);
+.presentation-buttons-container a {
   border: none;
   color: white;
   padding: 0.5rem 1rem;
@@ -57,11 +62,11 @@ h2, h3, p {
   margin-top: 1rem;
 }
 
-.presentation-buttons-container button:first-child {
+.presentation-buttons-container a:first-child {
   background-color: var(--accentcolor-primary);
 }
 
-.presentation-buttons-container button:last-child {
+.presentation-buttons-container a:last-child {
   background-color: var(--mastodon-button);
 }
 
@@ -71,7 +76,8 @@ h2, h3, p {
   color: white;
 }
 
-.projects-header, .skills-header {
+.projects-header,
+.skills-header {
   margin-top: 2.5rem;
 }
 
@@ -131,7 +137,7 @@ h2, h3, p {
   text-align: center;
 }
 
-.skills-container > div > img {
+.skills-container>div>img {
   width: 80px;
 }
 
@@ -201,7 +207,7 @@ h2, h3, p {
   padding: 1rem;
 }
 
-.contact-container > h1 {
+.contact-container>h1 {
   text-align: center;
 }
 
@@ -299,7 +305,7 @@ textarea {
   pointer-events: auto;
 }
 
-.modal-window > div {
+.modal-window>div {
   width: 400px;
   position: absolute;
   top: 50%;
@@ -346,7 +352,7 @@ a {
   height: 100vh;
 }
 
-.modal-window > div {
+.modal-window>div {
   border-radius: 1rem;
 }
 
