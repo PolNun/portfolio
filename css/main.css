@@ -21,7 +21,7 @@ main>article:first-child,
 .skills-header,
 .skills-container,
 .about-container {
-  margin: 0 150px;
+  margin: 30px 400px;
 }
 
 ::-moz-selection {

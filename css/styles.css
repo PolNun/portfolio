@@ -87,7 +87,7 @@ p {
 
 .project {
   padding: 1rem 0;
-  min-height: 80px;
+  height: min-content;
   max-height: fit-content;
 }
 
